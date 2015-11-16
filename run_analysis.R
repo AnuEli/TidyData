@@ -77,12 +77,17 @@ run_analysis <- function(){
   # Create second_tidy_set including average for each variable grouped by subject and activity
   
   second_tidy_set <- aggregate( X_extracted_data[, 3:ncol( X_extracted_data )], list( X_extracted_data$Subject, X_extracted_data$Activity), mean ) 
-  # Rename columns
+  
+  # Rename first columns to Subject and Activity
+  
   names( second_tidy_set )[ names( second_tidy_set) == "Group.1" ] <- "Subject"
   names( second_tidy_set )[ names( second_tidy_set) == "Group.2" ] <- "Activity"
 
+  # Round the measurement average values to 3 decimals
   
-  #second_tidy_set[, 3:ncol(second_tidy_set)] <- aggregate( second_tidy_set[ , 3:ncol(second_tidy_set)], FUN=round(,3) )
   second_tidy_set[, 3:ncol(second_tidy_set)] <- round( second_tidy_set[ , 3:ncol(second_tidy_set)], 3 )
+  
+  # Write table to file second_tide_set.txt
+  
   write.table( second_tidy_set, file = "C:\\Users\\maajaanu\\Tieto works\\Coursera\\secondTidyDataSet.txt", sep=" ", eol = "\n", dec= ".", col.names = TRUE, row.name =FALSE  )
 }
