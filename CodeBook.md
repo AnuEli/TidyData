@@ -8,18 +8,18 @@ Activity
    Character string having one of the following values:
    WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING.  LAYING
 
-    Note:eAll following columns are type float and include average (mean) counted for each variable grouped by subject & activity.
+    Note:eAll following columns are type float (3 decimals)  and include average (mean) counted for each variable grouped by subject & activity.
 
 tBodyAccmeanX
-    Float, including the average (mean) counted for tBodyAccmeanX variable grouped by subject & activity.
+    Float with 3 decimals, including the average (mean) counted for tBodyAccmeanX variable grouped by subject & activity.
 tBodyAccmeanY
-    Float, including the average (mean) counted for tBodyAccmeanYvariable grouped by subject & activity.
+    Float with 3 decimals, including the average (mean) counted for tBodyAccmeanYvariable grouped by subject & activity.
 tBodyAccmeanZ
-    Float, including the average (mean) counted for variable grouped by subject & activity.
+    Float with 3 decimals, including the average (mean) counted for variable grouped by subject & activity.
 tBodyAccstdX
-    Float, including the average (mean) counted for variable grouped by subject & activity.
-tBodyAccstdY
-	  Same as earlier….
+    Float with 3 decimals, including the average (mean) counted for variable grouped by subject & activity.
+tBodyAccstdY 
+    Same as earlier….
 tBodyAccstdZ
 tGravityAccmeanX
 tGravityAccmeanY
