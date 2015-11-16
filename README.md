@@ -12,5 +12,5 @@ Mean and standard measurement were extracted from the data table by grep() by se
 
 The following marks were removed from the labels: ‘(‘, ‘)’, ‘-‘  to help future processing.
 
-The data was grouped by subject and activity and average/mean was calculated for each group by aggregate() function. Results were stored to the data frame “Second_tidy_set”. Finally the measurements were rounded to 3 decimals and the resulting table was written to the file “Second_tidy_set.txt”.
+The data was grouped by subject and activity and average/mean was calculated for each group by aggregate() function. Results were stored to the data frame “second_tidy_set”. Finally the measurements were rounded to 3 decimals and the resulting table was written to the file “secondTidyDataSet.txt”.
 
